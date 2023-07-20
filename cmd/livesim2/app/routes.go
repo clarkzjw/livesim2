@@ -28,5 +28,8 @@ func (s *Server) Routes(ctx context.Context) error {
 	s.VodRouter.MethodFunc("HEAD", "/*", s.vodHandlerFunc)
 	s.Router.MethodFunc("OPTIONS", "/*", s.optionsHandlerFunc)
 	s.Router.MethodFunc("GET", "/", s.indexHandlerFunc)
+	// UTC Timestamp Hander
+	s.Router.MethodFunc("GET", "/timems", s.UTCTimeHandlerFunc)
+	s.Router.MethodFunc("GET", "/timeiso", s.UTCISOTimeHandlerFunc)
 	return nil
 }

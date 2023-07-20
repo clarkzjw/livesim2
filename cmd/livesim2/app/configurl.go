@@ -38,8 +38,8 @@ const (
 const (
 	UtcTimingNtpServer    = "1.de.pool.ntp.org"
 	UtcTimingSntpServer   = "time.kfki.hu"
-	UtcTimingHttpServer   = "http://time.akamai.com/?iso"
-	UtcTimingHttpServerMS = "http://time.akamai.com/?isoms"
+	UtcTimingHttpServer   = "http://livesim2:8888/timeiso"
+	UtcTimingHttpServerMS = "http://livesim2:8888/timems"
 )
 
 type ResponseConfig struct {
